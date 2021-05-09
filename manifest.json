@@ -7,14 +7,14 @@
     },
     "dumper": {
         "data_url": [
-            "https://storage.googleapis.com/multiomics_provider_kp_data/biggim1/test/BigGIM_all_data.zip",
-            "https://storage.googleapis.com/multiomics_provider_kp_data/biggim1/test/biggim_gene_nodes.csv"
+            "https://storage.googleapis.com/multiomics_provider_kp_data/biggim1/BigGIM_all_data.zip",
+            "https://storage.googleapis.com/multiomics_provider_kp_data/biggim1/biggim_gene_nodes.csv"
         ],
-        "uncompress": false,
+        "uncompress": true,
         "release": "version:get_release"
     },
     "uploader": {
         "parser": "file_parser:load_data",
-        "on_duplicates": "ignore"
+        "on_duplicates": "error"
     }
 }
